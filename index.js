@@ -53,5 +53,11 @@ let createPost = () =>{
 
 // Fonction supprimer post
 let deletePost = (e) => {
-    
+    e.parentElement.parentElement.remove();
 }
+
+//Fonction modifier post
+let editPost = (e) => {
+    input.value = e.parentElement.previousElementSibling.innerHTML;
+    e.parentElement.parentElement.remove();
+};
