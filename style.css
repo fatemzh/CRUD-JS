@@ -1,45 +1,22 @@
-*{
-    box-sizing: border-box;
+body {
     font-family: sans-serif;
-    margin: 0 auto;
-}
-
-body{
-    flex-direction: column;
-    align-items: center;
-}
-
-h1{
-    text-align: center;
-    margin: 50px;
-}
-
-.container{
+    margin: 0 50px;
+  }
+  
+  .container {
     display: flex;
-    flex-direction: column;
-    width: 400px;
     gap: 50px;
-    padding: 30px;
-    background-color: rgb(189, 235, 204);
-    border-radius: 20px;
-}
+  }
+  
+  #posts {
+    width: 400px;
+  }
+  
+  i {
+    cursor: pointer;
+  }
 
-label{
-    font-size: 30px;
-}
-
-#posts{
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.right, .post{
-    margin: 0;
-}
-
-#posts div {
+  #posts div {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -48,4 +25,8 @@ label{
   .options {
     display: flex;
     gap: 25px;
+  }
+  
+  #msg {
+    color: red;
   }
